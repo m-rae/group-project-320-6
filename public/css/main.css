@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    background-color: #262626;
+}
+
+h3,
+h5,
+th,
+td,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+a {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 5%;
+
+}
+
+h1::before {
+    content: url(../imgs/music_sign.png);
+    padding-right: 10px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #232b2b;
+}
+.hidemobile{
+    display:none;
+}
+.header h1 {
+    float: left;
+    color: white;
+}
+
+h5,
+p {
+    color: white;
+}
+
+.header a img {
+    float: right;
+    margin: 5%;
+}
+
+h3 {
+    float: left;
+    color: white;
+    margin: 1% 0 1% 0;
+    padding-left: 5%;
+}
+
+/* menu */
+ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vh;
+    max-width: 500px;
+    margin: auto;
+}
+
+ul li a {
+    text-decoration: none;
+    height: 25vh;
+    display: block;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li:first-child a {
+    background: #462d60;
+}
+
+ul li:first-child a:hover {
+    background: #a274d3;
+}
+
+ul li:nth-child(2) a {
+    background: #465c1e;
+}
+
+ul li:nth-child(2) a:hover {
+    background: #88e62a;
+}
+
+ul li:nth-child(3) a {
+    background: #1c5a58;
+}
+
+ul li:nth-child(3) a:hover {
+    background: #35dad5;
+}
+
+ul li:nth-child(4) a {
+    background: #5a5c20;
+}
+
+ul li:nth-child(4) a:hover {
+    background: #ced325;
+}
+/* menu */
+.container {
+    padding: 5%;
+}
+
+/* menu */
+/* .holds {
+    display: none;
+} */
+
+.top h2 {
+    padding-left: 5%;
+    color: white;
+}
+
+img.play_mobile.clearfix {
+    position: fixed;
+    bottom: 0;
+}
+
+
+.play_desktop {
+    display: none;
+}
+
+.list_song {
+    display: none;
+}
+.holds h2 {
+    color: white;
+}
+.songs{
+    padding: 5%;
+}
+.songs h2{
+    margin-bottom: 2%;
+}
+.thesong {
+    display: flex;
+    width: 100%;
+}
+
+.song-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.song-title h5 {
+    padding-left: 5%;
+}
+.banner{
+    position: relative;
+    z-index: 0;
+}
+
+.banner h2 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 40%;
+    left: 45%;
+    z-index: 9;
+}
+@media screen and (min-width:768px) {
+ 
+    .container {
+        background-color: #232b2b;
+    }
+
+    .hidemobile, ul {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        max-width: 100%;
+    }
+
+    ul li a {
+        height: 50px;
+    }
+
+ 
+
+    
+
+
+    .top {
+        display: none;
+    }
+
+    .play_desktop {
+        display: block;
+        width: 25%;
+        position: fixed;
+        bottom: 3%;
+        left: 40%;
+        text-align: center;
+    }
+
+    .play_mobile {
+        display: none;
+    }
+
+    .list_song {
+        display: block;
+        margin: 0 5%;
+        color: white;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-family: sans-serif;
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+    }
+
+    th {
+        border-bottom: 1px solid #ddd;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    td {
+        padding: 0.7rem;
+        text-align: center;
+    }
+
+
+}
